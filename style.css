@@ -1,0 +1,572 @@
+.logo,
+.crashlogo,
+.adminLogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.crashlogo {
+    height: 200px;
+    background-image: url("resources/gadgetsbroken.png");
+}
+
+.logo {
+    height: 90px;
+    background-image: url("resources/gadgets.svg");
+}
+
+.adminLogo {
+    height: 90px;
+    background-image: url("resources/gadgets1.svg");
+}
+
+@font-face {
+    font-family: "mago1";
+    src: url("fonts/mago1.ttf");
+}
+
+@font-face {
+    font-family: "magotitle";
+    src: url("fonts/mago3.ttf");
+}
+
+.comp_title {
+    font-family: "magotitle";
+    font-size: 60px;
+}
+
+.subtitle {
+    font-family: "mago1";
+    font-size: 45px;
+}
+
+.techWizdropdown-content {
+    z-index: 3;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.techWizdropdown {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+}
+
+.techWizdropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.techWizdropdown:hover .techWizdropdown-content {
+    display: block;
+}
+
+.techWizdropdown-content a:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+}
+
+.hAndCtext,
+.signOutText,
+.signInText,
+.registerText,
+.advancedSearchText,
+.categoryListNames a,
+ol li a,
+a.card-title,
+a.position-relative,
+a.backToHome {
+    text-decoration: none;
+}
+
+.hAndCtext:hover,
+.signOutText:hover,
+.signInText:hover,
+.registerText:hover,
+.advancedSearchText:hover,
+.categoryListNames a:hover,
+ol li a:hover,
+a.card-title:hover,
+a.position-relative:hover,
+a.backToHome:hover {
+    text-decoration: underline;
+}
+
+.categoryListNames {
+    z-index: 1;
+    position: absolute;
+    max-height: 0;
+    max-width: fit-content;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: max-height 1s ease;
+
+}
+
+.categoryList {
+    display: inline-block;
+    z-index: 1;
+
+    &:hover {
+        .categoryListNames {
+            max-height: 1000px;
+        }
+    }
+}
+
+
+.categories {
+    position: relative;
+}
+
+@media(min-width:425px) {
+    .wishlistProductSelectCheck {
+        top: 23%;
+        left: 10%;
+        font-size: 35px;
+    }
+
+    .wishlistProductSelectAllCheckContainer {
+        left: 1%;
+    }
+
+    .cartItemRemove {
+        bottom: 1%;
+        right: 17px;
+    }
+
+    .vertical-menu {
+        width: 100%;
+    }
+
+    .vertical-menu a {
+        float: left;
+        transition: none;
+    }
+
+    .mainBodyContent {
+        width: 100%;
+    }
+
+    .sidebarMain {
+        width: 310px;
+        position: absolute;
+        left: 0%;
+        overflow: hidden;
+        z-index: 1;
+        padding: 0px 10px;
+        height: 100vh;
+    }
+
+    .mainAdminContent {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:576px) {
+    .myAccPersonalInfoDiv {
+        border-top: 1px solid black;
+    }
+}
+
+@media(min-width:576px) {
+
+    .wishlistProductSelectCheck {
+        top: 23%;
+        left: 15%;
+    }
+
+    .myAccPersonalInfoDiv {
+        border-left: 1px solid black;
+    }
+
+}
+
+@media(max-width:768px) {
+    .addressListForm {
+        border-top: 1px solid black
+    }
+}
+
+@media(min-width:768px) {
+
+    .wishlistProductSelectCheck {
+        top: 40%;
+        left: 2%;
+    }
+
+    .wishlistProductSelectAllCheckContainer {
+        left: 2.5%;
+    }
+
+    .cartItemRemove {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .addressListForm {
+        border-left: 1px solid black
+    }
+
+}
+
+@media(min-width:992px) {
+
+    .sidebarMain {
+        position: static;
+        padding: 0px;
+        width: 300px;
+    }
+
+    .mainAdminContent {
+        width: calc(100% - 300px);
+        margin-left: 20px;
+    }
+
+    .wishlistProductSelectAllCheckContainer {
+        left: 2%;
+    }
+
+    .mainBodyContent {
+        width: calc(100% - 50px);
+    }
+
+    .vertical-menu {
+        width: 50px;
+        height: fit-content;
+
+        &:hover {
+            width: 230px;
+        }
+    }
+
+    .vertical-menu a {
+        display: block;
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        transition: none;
+    }
+
+    .vertical-menu a:first-child {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .vertical-menu a:last-child {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+}
+
+.bi-facebook:hover {
+    color: #4267B2;
+}
+
+.bi-whatsapp:hover {
+    color: rgb(37, 211, 102);
+}
+
+.bi-google:hover {
+    color: yellow;
+}
+
+.bi-youtube:hover {
+    color: red;
+}
+
+.offcanvas-body a {
+    color: black;
+    text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+    color: #0d6efd;
+}
+
+.offcanvas-body li:hover {
+    background-color: #f9f9f9;
+}
+
+.tdtitle {
+    text-decoration: none;
+    color: black;
+}
+
+.tdtitle:hover {
+    text-decoration: underline;
+}
+
+.productcard {
+    transition: 0.2s;
+}
+
+.productcard:hover {
+    transform: scale(1.1);
+}
+
+.sticky {
+    top: 0;
+    position: fixed;
+}
+
+.cartCheckoutSticky {
+    width: 26.55%;
+    margin-top: -0.95%;
+}
+
+* {
+    transition: 1s;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+input[type="checkbox"],
+datalist option,
+div.card i,
+#bodyContent,
+label,
+#cartCheckout,
+a,
+i,
+.offcanvas-body li,
+.myAccAddressInlineRadios,
+input[type="radio"],
+.manageUserTable>tbody>tr>* {
+    transition: none;
+}
+
+.searchResultCard {
+    transition: 0.2s;
+}
+
+.searchResultCard:hover {
+    transform: scale(1.03);
+}
+
+.colours {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.scProductSelectAllCheck {
+    font-size: 35px;
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    text-align: start;
+    padding: 16px;
+    font-size: large;
+    background-color: #eeeeee;
+}
+
+.vertical-menu a.active {
+    background-color: #f8f8f8;
+}
+
+.vertical-menu a:hover {
+    background-color: #ddd;
+}
+
+.myAccountAccordionTitle {
+    padding: 16px;
+    font-size: x-large;
+    border: 1px solid black;
+    margin-top: -1px;
+    cursor: pointer;
+    transition: none;
+
+    &:first-of-type {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &:hover {
+        background-color: #eeeeee;
+    }
+}
+
+.myAccountAccordionContent {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: -1px;
+    overflow: hidden;
+
+    &:last-of-type {
+        border-bottom: 1px solid black;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+.myAccountAccordionContent p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.profileImg {
+    opacity: 1;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: 0.35s ease;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+        .profileImgCover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.profileImgCover {
+    transition: 0.5s ease;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    top: 51%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+
+.myAccountAccordionContent:not(.personalInfo) {
+    height: 0;
+}
+
+.myAccountAccordionCollapse {
+    transition: height 0.35s ease;
+}
+
+.addressList,
+.updateProductList {
+    overflow-y: auto;
+
+    a,
+    p {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 16px;
+
+        &:hover {
+            background-color: #ddd
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.adminNavButton {
+    padding: 25px 5px;
+    color: #afafaf;
+
+    &:hover {
+        color: #0d6efd;
+    }
+}
+
+.sidebar a.sidebarItem {
+    text-align: start;
+    width: 290px;
+
+    &:not(.manageUser)::after {
+        content: "\25BE";
+        float: right;
+    }
+}
+
+.sidebarItemList {
+    transition: 0.2s;
+
+    div {
+        max-height: 0;
+        overflow: hidden;
+
+        a {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            float: right;
+        }
+    }
+
+    &.activeList {
+        div {
+            max-height: 300px;
+        }
+    }
+}
+
+.bndAdresses a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#addressModal .card {
+    transition: none;
+
+    &:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.sidebarCollapse {
+    width: 0;
+    padding: 0;
+}
+
+.mainAdminContentExpand {
+    width: 100%;
+}
+
+.adminHeaderalerts,
+.sidebarHeader {
+    padding-top: 37.5px;
+}
+
+.productImg {
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+dl.specifications dd {
+    white-space: pre-wrap;
+}
+
+.invoicePadding {
+    padding: 2rem 8rem;
+}
+
+.adminDashboardCard::-webkit-scrollbar{
+    display: none;
+}
